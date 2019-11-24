@@ -18,5 +18,5 @@ from django.conf.urls import url, include
 from django.contrib.auth.models import User
 
 urlpatterns = [
-    url('', admin.site.urls),
+    url('', include("testapp.urls"),name="test"),
 ]
